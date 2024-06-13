@@ -1,0 +1,55 @@
+.header-page {
+  padding: 0.3% 3.5% 2%;
+  width: 93%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+
+/* Icon on left */
+.Nike-Logo {
+  width: 80px;
+}
+
+/* Menu options */
+.menu {
+  display: flex;
+  font-size: 14px;
+
+  p {
+    color: white;
+    margin: 30px;
+    transition: 0.2s;
+  }
+
+  p:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    text-shadow: rgb(255, 255, 255) 1px 0 20px;
+    color: rgb(46, 46, 46);
+    z-index: 0;
+  }
+}
+
+/* Icons on right */
+.profile-icons {
+  .icon {
+    width: 30px;
+    margin-left: 12px;
+    transition: 0.2s;
+
+    .profile {
+      color: white;
+    }
+
+    .bag {
+      color: white;
+    }
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    fill: black !important;
+    transform: scale(1.1);
+  }
+}

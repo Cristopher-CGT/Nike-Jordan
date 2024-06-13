@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Reddit+Sans:ital,wght@0,200;1,200&display=swap");
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+/* infos left side */
+.Informations {
+  width: 50%;
+  margin-top: 4%;
+  margin-left: 50px;
+}
+
+.info-title {
+  margin: 25px 0px 0px 10px;
+}
+
+.quicksand-500 {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.reddit-sans-200 {
+  font-family: "Reddit Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+p {
+  margin: 0;
+}
+
+.title {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.descript {
+  font-size: 14px;
+}
+
+.btns-sizes {
+  margin-top: 3px;
+  display: grid;
+  grid-template-columns: repeat(5, 7.8dvh);
+  max-width: 270px;
+
+  button {
+    padding: 12px;
+    width: 45px;
+    border-radius: 5px;
+    border: #ffffff 2px solid;
+    background-color: transparent;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    transition: 0.35s;
+  }
+
+  button:hover {
+    background-color: rgba(223, 223, 223, 0.7);
+    /* color: rgb(65, 65, 65); */
+    cursor: pointer;
+    box-shadow: 0px 0px 7.5px rgb(255, 255, 255);
+  }
+
+  button:active {
+    background-color: rgba(85, 85, 85, 0.338);
+  }
+}
+
+.colorway {
+  margin-top: 10px;
+}

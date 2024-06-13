@@ -1,0 +1,82 @@
+.jordan {
+  rotate: -15deg;
+  position: absolute;
+  top: 15%;
+  left: 36.5%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Esquerda para o meio  (E -> 0) */
+@keyframes ani_prev_new {
+  from {
+    transform: translateX(-250%) translateY(-40%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Direita para o meio (0 <- E) */
+@keyframes ani_next_new {
+  from {
+    transform: translateX(250%) translateY(40%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Meio para a esquerda  (E <- 0)*/
+@keyframes ani_prev_last {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(-250%) translateY(-40%);
+  }
+}
+
+/* Meio para a direita  (0 -> E) */
+@keyframes ani_next_last {
+  from {
+    transform: translateX(0);
+  }
+  
+  to {
+    transform: translateX(250%) translateY(40%);
+  }
+}
+
+.previous_new {
+  animation-name: ani_prev_new;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.next_new {
+  animation-name: ani_next_new;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.previous_last {
+  animation-name: ani_prev_last;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.next_last {
+  animation-name: ani_next_last;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}

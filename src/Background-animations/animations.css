@@ -1,0 +1,94 @@
+/* Red to Blue */
+@keyframes red-blue {
+    from {
+        background: #bf2131 
+    }
+    to {
+        background: #0736a3
+    }
+}
+
+/* Blue to Green */
+@keyframes blue-green {
+    from {
+        background: #0736a3
+    }
+    to {
+        background: #02752c
+    }
+}
+
+/* Green to Purple */
+@keyframes green-purple {
+    from {
+        background: #02752c
+    }
+    to {
+        background: #461285
+    }
+}
+
+/* REVERSE */
+
+/* Purple to Green */
+@keyframes purple-green {
+    from {
+        background: #461285
+    }
+    to {
+        background: #02752c
+    }
+}
+
+/* Green to Blue */
+@keyframes green-blue {
+    from {
+        background: #02752c
+    }
+    to {
+        background: #0736a3
+    }
+}
+
+/* Blue to Red */
+@keyframes blue-red {
+    from {
+        background: #0736a3
+    }
+    to {
+        background: #bf2131
+    }
+}
+
+/* Infinit */
+
+/* Purple to Red */
+@keyframes purple-red {
+    from {
+        background: #4b169a
+    }
+    to {
+        background: #bf2131
+    }
+}
+
+/* Red to Purple */
+@keyframes red-purple {
+    from {
+        background: #bf2131
+    }
+    to {
+        background: #4b169a
+    }
+}
+
+/* Red to Purple */
+@keyframes red {
+    from {
+        background: #bf2131
+    }
+
+    to {
+        background: #bf2131
+    }
+}

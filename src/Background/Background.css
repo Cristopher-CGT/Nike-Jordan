@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('../Background-animations/animations.css');
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow: hidden!important;
+}
+
+
+
+/* Left to Right */
+body.bk-right-blue {
+  animation: red-blue 2s forwards;
+}
+
+body.bk-right-green {
+  animation: blue-green 2s forwards;
+}
+
+body.bk-right-purple {
+  animation: green-purple 2s forwards;
+}
+
+body.bk-right-red {
+  animation: purple-red 2s forwards;
+}
+
+/* Right to Left */
+body.bk-left-purple {
+  animation: red-purple 2s forwards;
+}
+
+body.bk-left-green {
+  animation: purple-green 2s forwards;
+}
+
+body.bk-left-blue {
+  animation: green-blue 2s forwards;
+}
+
+body.bk-left-red {
+  animation: blue-red 2s forwards;
+}
+
+
+body.red {
+  animation: red 2s forwards;
+}
+
+.brand {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 350px;
+  position: absolute;
+  top: 45%;
+  left: 19.8%;
+  transform: translate(-50%, -50%);
+  margin: 0 30%;
+}

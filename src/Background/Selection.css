@@ -1,0 +1,152 @@
+.colors {
+    button {
+      padding: 15px;
+      border: none;
+      border-radius: 50%;
+      margin: 0 5px;
+    }
+  
+    #circle {
+      border: 2px solid white;
+      padding: 17px !important;
+      background-color: transparent;
+      position: fixed;
+      bottom: 45px;
+      left: 56px;
+    }
+  
+    #red {
+      background-color: red;
+    }
+  
+    #blue {
+      background-color: blue;
+    }
+  
+    #green {
+      background-color: green;
+    }
+  
+    #purple {
+      background-color: purple;
+    }
+}
+
+/* Red to Blue */
+@keyframes circle-red-blue {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(40.5px);
+  }
+}
+
+/* Blue to Green */
+@keyframes circle-blue-green {
+  from {
+    transform: translateX(40.5px);
+  }
+  to {
+    transform: translateX(80px);
+  }
+}
+
+/* Green to Purple */
+@keyframes circle-green-purple {
+  from {
+    transform: translateX(80px);
+  }
+  to {
+    transform: translateX(120px);
+  }
+}
+
+/* REVERSE */
+
+/* Purple to Green */
+@keyframes circle-purple-green {
+  from {
+    transform: translateX(120px);
+  }
+  to {
+    transform: translateX(80px);
+  }
+}
+
+/* Green to Blue */
+@keyframes circle-green-blue {
+  from {
+    transform: translateX(80px);
+  }
+  to {
+    transform: translateX(40.5px);
+  }
+}
+
+/* Blue to Red */
+@keyframes circle-blue-red {
+  from {
+    transform: translateX(40.5px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Infinit */
+
+/* Purple to Red */
+@keyframes circle-purple-red {
+  from {
+    transform: translateX(120px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Red to Purple */
+@keyframes circle-red-purple {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(120px);
+  }
+}
+
+/* Right + Next Color */
+.right-blue {
+  animation: circle-red-blue 1.5s ease-in-out forwards;
+}
+
+.right-green {
+  animation: circle-blue-green 1.5s ease-in-out forwards;
+}
+
+.right-purple {
+  animation: circle-green-purple 1.5s ease-in-out forwards;
+}
+
+.right-red {
+  animation: circle-purple-red 1.5s ease-in-out forwards;
+}
+
+/* Left + Next Color */
+.left-red {
+  animation: circle-blue-red 1.5s ease-in-out forwards;
+}
+
+.left-blue {
+  animation: circle-green-blue 1.5s ease-in-out forwards;
+}
+
+.left-green {
+  animation: circle-purple-green 1.5s ease-in-out forwards;
+}
+
+.left-purple {
+  animation: circle-red-purple 1.5s ease-in-out forwards;
+}
