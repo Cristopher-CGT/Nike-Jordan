@@ -1,4 +1,9 @@
+
+
 .colors {
+    position: relative;
+    left: -46.5px;
+
     button {
       padding: 15px;
       border: none;
@@ -10,9 +15,10 @@
       border: 2px solid white;
       padding: 17px !important;
       background-color: transparent;
-      position: fixed;
-      bottom: 45px;
-      left: 56px;
+      position: relative;
+      display: inline;
+      top: 60%;
+      left: 44px;
     }
   
     #red {

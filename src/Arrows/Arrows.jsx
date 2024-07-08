@@ -16,7 +16,7 @@ function Arrows(props) {
     setTimeout(() => {
       btn_l.removeAttribute("disabled");
       btn_r.removeAttribute("disabled");
-    }, 1450);
+    }, 1900);
   }
 
   // Arrows vai devolver o background e o infos para o App ou Options
@@ -71,11 +71,18 @@ function Arrows(props) {
     
     const element = document.getElementById(id);
     
+    element.classList.remove("hidden");
     element.classList.remove(new_clss);
     element.classList.remove(old_clss);
 
     void element.offsetWidth;
     element.classList.add(new_clss);
+
+    if(id == "jordan-last"){
+      element.addEventListener('animationend', () => {
+        element.classList.add("hidden");
+      });
+    }
   }
 
   useEffect(() => {

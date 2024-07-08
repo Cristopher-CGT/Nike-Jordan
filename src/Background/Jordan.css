@@ -2,17 +2,20 @@
   rotate: -15deg;
   position: absolute;
   top: 15%;
-  left: 36.5%;
+  left: 0;
+  right: 0;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
 
 /* Esquerda para o meio  (E -> 0) */
 @keyframes ani_prev_new {
   from {
-    transform: translateX(-250%) translateY(-40%);
+    transform: translateX(-500%) translateY(-85%);
   }
 
   to {
@@ -23,7 +26,7 @@
 /* Direita para o meio (0 <- E) */
 @keyframes ani_next_new {
   from {
-    transform: translateX(250%) translateY(40%);
+    transform: translateX(500%) translateY(85%);
   }
 
   to {
@@ -38,7 +41,7 @@
   }
   
   to {
-    transform: translateX(-250%) translateY(-40%);
+    transform: translateX(-500%) translateY(-85%);
   }
 }
 
@@ -49,7 +52,7 @@
   }
   
   to {
-    transform: translateX(250%) translateY(40%);
+    transform: translateX(500%) translateY(85%);
   }
 }
 
